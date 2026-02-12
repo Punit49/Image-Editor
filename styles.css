@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    padding: var(--padding-2xl);
+    gap: var(--gutter-lg);
+}
+
+.image-section{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gutter-lg);
+}
+
+.image-box{
+    width: 100%;
+    background-color: var(--bg-secondary-color);
+    padding: var(--padding-xl);
+    aspect-ratio: 5/3;
+    border-radius: var(--border-radius-2xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.image-view{
+    text-align: center;
+    opacity: 0.6;
+}
+
+.image-view p{
+    font-size: var(--font-size-lg);
+}
+
+.image-view i{
+    font-size: 8rem;
+}
+
+.image-filters-section{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-lg);
+    background-color: var(--bg-secondary-color);
+    padding: var(--padding-lg);
+}
+
+.image-filters-section .filters{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-md);
+    width: 100%;
+}
+
+.image-filters-section .filters input{
+    width: 100%;
+    outline: none;
+    appearance: none;
+    margin-top: var(--margin-md);
+}
+
+.image-filters-section .filters input::-webkit-slider-thumb{
+    cursor: pointer;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: -8.5px;
+}
+
+.image-filters-section .filters input::-webkit-slider-runnable-track{
+    height: 3px;
+    background-color: var(--bg-active-color);
+}
+
+.filters p{
+    font-size: var(--font-size-lg);
+}
+
+.filterHeading{
+    margin-bottom: var(--margin-md);
+}
+
+.image-btns{
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-md);
+}
+
+.btn{
+    padding: var(--padding-sm) var(--padding-lg);
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius-md);
+    background-color: var(--bg-active-color);
+    cursor: pointer;
+    color: var(--text-active-color);
+    font-size: var(--font-size-md);
+}
+
+.preset-btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter-sm);
+}
+
+
+#resetBtn{
+    background-color: var(--bg-danger-color);
+    color: var(--text-primary-color);        
+}
+
+#downloadBtn{
+    background-color: var(--bg-success-color);
+    color: var(--text-primary-color);        
+}
+
+#canvas{
+    max-width: 90%;
+    max-height: 80vh;
+}
+
+.hidden{
+    display: none;
+}
+
+@media(max-width: 1000px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-section{
+        width: 90%;
+    }
+    .image-filters-section{
+        width: 70%;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./theme.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <main>
+        <div class="image-section">
+            <div class="image-btns">
+                <label for="image-input" class="btn">
+                    Choose Image
+                    <input type="file" accept="image/*" id="image-input" hidden>
+                </label>
+                <button class="btn" id="resetBtn">Reset</button>
+                <button class="btn" id="downloadBtn">Download Image</button>
+            </div>
+
+            <div class="image-box">
+                <div class="image-view">
+                    <i class="ri-image-ai-line"></i>
+                    <p>No Image Selected</p>
+                </div>
+                <div class="image-canvas">
+                    <canvas id="canvas" class="hidden"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-filters-section">
+            <div class="image-filters">
+                <h1 class="filterHeading">Filters</h1>
+                <div class="filters">
+                    
+                </div>
+            </div>
+            <div class="image-filters-presets">
+                <h1 class="filterHeading">Presets</h1>
+                <div class="preset-btns">
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script defer src="./app.js"></script>
+</body>
+</html>
