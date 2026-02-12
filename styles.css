@@ -151,11 +151,18 @@ main{
     main{
         flex-direction: column;
         align-items: center;
+        padding: var(--padding-lg)
     }
     .image-section{
-        width: 90%;
+        width: 100%;
     }
     .image-filters-section{
-        width: 70%;
+        width: 80%;
+    }
+}
+
+@media(max-width: 450px) {
+    .image-filters-section{
+        width: 95%;
     }
 }
